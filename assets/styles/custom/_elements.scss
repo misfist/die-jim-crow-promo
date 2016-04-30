@@ -10,7 +10,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    background-color: $color__primary;
+    background-color: $color__accent;
+    border-color: $color__accent;
 }
 
 mark,

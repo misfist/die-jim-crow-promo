@@ -56,7 +56,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: #888; }
+  background-color: #f00;
+  border-color: #f00; }
 
 mark,
 ins {
