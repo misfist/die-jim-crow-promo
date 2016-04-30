@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono|Source+Code+Pro:400,700|Anonymous+Pro:400,400italic,700,700italic);
+
 a {
     color: $color__primary;
 
@@ -17,6 +19,13 @@ input[type="submit"] {
 mark,
 ins {
     background-color: $color__primary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font__heading;
 }
 
 h2.entry-title {
