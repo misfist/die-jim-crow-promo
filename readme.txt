@@ -27,6 +27,36 @@ A theme for the Die Jim Crow promo site.
 
 This theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
+== Developer Notes ==
+
+This is a child theme of the Singl theme https://wordpress.com/themes/singl/ . It has some custom styles, functions and templates.
+
+= File Structure =
+
+assets/
+    fonts
+    images
+    scripts
+    styles
+dist/
+    scripts
+    styles
+inc/
+    custom.php
+    enqueue.php
+    setup.php
+functions.php
+style.css
+
+= Workflow =
+
+This theme is set up to use gulp to process SASS, script, images, etc. The source files are in the `assets` directory and the compiled files are moved to the `dist` directory.
+
+= SASS =
+
+This theme used the .scss syntax. SASS variables are set-up and can be changed in `assets/styles/custom/_variables.scss`. 
+
+
 == Changelog ==
 
 
