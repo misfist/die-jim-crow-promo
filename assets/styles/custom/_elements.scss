@@ -19,6 +19,27 @@ ins {
     background-color: $color__primary;
 }
 
+h2.entry-title {
+    width: 100%;
+    background-color: $color__white;
+}
+
+@include breakpoint(md) {
+    h2.entry-title {
+        width: 688px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+}
+
+@include breakpoint(lg) {
+    h2.entry-title {
+        width: 720px;
+    }
+}
+
 /**
  * Navigation
  */

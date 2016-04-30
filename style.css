@@ -76,6 +76,22 @@ mark,
 ins {
   background-color: #888; }
 
+h2.entry-title {
+  width: 100%;
+  background-color: #fff; }
+
+@media screen and (min-width: 766px) {
+  h2.entry-title {
+    width: 688px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: .5em;
+    padding-bottom: .5em; } }
+
+@media screen and (min-width: 958px) {
+  h2.entry-title {
+    width: 720px; } }
+
 /**
  * Navigation
  */
