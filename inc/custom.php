@@ -68,4 +68,23 @@ function djc_team_labels( $args ) {
 add_filter( 'woothemes_our_team_post_type_args', 'djc_team_labels' );
 
 
+function djc_our_team_content( $content ) {
+
+    global $post;
+
+    $content = $post->post_content;
+
+    if( is_post_type_archive( 'team-member' ) ) {
+        return $content;
+    }
+
+    return $content;
+
+}
+
+add_filter( 'the_content', 'djc_our_team_content' );
+
+
+
+
 ?>
