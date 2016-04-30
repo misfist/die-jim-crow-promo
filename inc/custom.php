@@ -59,7 +59,7 @@ function djc_team_labels( $args ) {
     $labels['singular_name']    = _x( 'Bio', 'post type singular name' );
     $labels['add_new_item']     = sprintf( __( 'Add New %s' ), __( 'Bio' ) );
     $labels['add_new']          = _x( 'Add New', 'bio' );
-    $labesl['menu_name']        = _x( 'Bios' );
+    $labels['menu_name']        = __( 'Bios' );
     $args['labels']             = $labels;
 
     return $args;
