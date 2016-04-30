@@ -72,9 +72,9 @@ function djc_our_team_content( $content ) {
 
     global $post;
 
-    $content = $post->post_content;
-
     if( is_post_type_archive( 'team-member' ) ) {
+
+        $content = $post->post_content;
         return $content;
     }
 
