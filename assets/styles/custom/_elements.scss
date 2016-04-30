@@ -1,0 +1,92 @@
+a {
+    color: $color__primary;
+
+    &.button {
+        @include button($font-size: $h4);
+    }
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: $color__primary;
+}
+
+mark,
+ins {
+    background-color: $color__primary;
+}
+
+/**
+ * Navigation
+ */
+.menu-toggle:hover, 
+.main-navigation.toggled .menu-toggle,
+.main-navigation a:hover,
+.social-links a:hover  {
+    background-color: $color__primary;
+}
+
+.site-main [class*="navigation"] a {
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $color__primary;
+    }
+}
+
+.page-link {
+    background-color: $color__primary;
+    border: 1px solid $color__primary;
+}
+
+.page-title a,
+.entry-title a,
+.entry-meta a {
+    &:hover,
+    &:focus,
+    &:active {
+       color: $color__primary; 
+    }
+}
+
+.comment-meta .fn a {
+    &:hover,
+    &:focus,
+    &:active {
+       color: $color__primary; 
+    }
+}
+
+.comment-reply-title {
+    &:hover,
+    &:focus,
+    &:active {
+       color: $color__primary; 
+    }
+}
+
+.reply a {
+    background-color: $color__primary;
+}
+
+.more-link {
+    background-color: $color__primary;
+}
+
+.widgets-trigger {
+    &:hover,
+    &:focus,
+    &:active {
+       background-color: $color__primary; 
+    }
+}
+
+#infinite-handle span:hover {
+    background-color: $color__primary;
+}
+
+.archive-eventbrite .paging-navigation .page-numbers.current {
+    background-color: $color__primary;
+}

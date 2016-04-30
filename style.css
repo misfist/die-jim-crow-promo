@@ -1,13 +1,109 @@
-/*
- Theme Name:   Die Jim Crow Promo
- Theme URI:    https://github.com/misfist/die-jim-crow-promo
- Description:  One-page Promo Site for Die Jim Crow
- Author:       Pea
- Author URI:   http://misfist.com
- Template:     singl
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  die-jim-crow-promo
-*/
+/**
+ * Color variables
+ */
+/**
+ * Uncomment and change as desired.
+ */
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+/**
+ * Lists
+ */
+/**
+ * Buttons
+ */
+/**
+ * Elements
+ */
+/**
+ * Utilities
+ */
+/**
+ * Extends
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+a {
+  color: #888; }
+  a.button {
+    transition: all 0.25s ease;
+    font-size: 22px;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: .75em 3em;
+    text-align: center;
+    border: 0;
+    background: #f00;
+    color: #fff !important;
+    display: inline-block;
+    border-radius: 0; }
+    a.button:link, a.button:visited {
+      color: #fff !important; }
+    a.button:hover, a.button:focus {
+      background: #ff3333;
+      color: #fff !important; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #888; }
+
+mark,
+ins {
+  background-color: #888; }
+
+/**
+ * Navigation
+ */
+.menu-toggle:hover,
+.main-navigation.toggled .menu-toggle,
+.main-navigation a:hover,
+.social-links a:hover {
+  background-color: #888; }
+
+.site-main [class*="navigation"] a:hover, .site-main [class*="navigation"] a:focus, .site-main [class*="navigation"] a:active {
+  background-color: #888; }
+
+.page-link {
+  background-color: #888;
+  border: 1px solid #888; }
+
+.page-title a:hover, .page-title a:focus, .page-title a:active,
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active,
+.entry-meta a:hover,
+.entry-meta a:focus,
+.entry-meta a:active {
+  color: #888; }
+
+.comment-meta .fn a:hover, .comment-meta .fn a:focus, .comment-meta .fn a:active {
+  color: #888; }
+
+.comment-reply-title:hover, .comment-reply-title:focus, .comment-reply-title:active {
+  color: #888; }
+
+.reply a {
+  background-color: #888; }
+
+.more-link {
+  background-color: #888; }
+
+.widgets-trigger:hover, .widgets-trigger:focus, .widgets-trigger:active {
+  background-color: #888; }
+
+#infinite-handle span:hover {
+  background-color: #888; }
+
+.archive-eventbrite .paging-navigation .page-numbers.current {
+  background-color: #888; }

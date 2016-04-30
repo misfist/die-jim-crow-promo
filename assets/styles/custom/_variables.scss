@@ -1,0 +1,165 @@
+/**
+ * Color variables
+ */
+
+/**
+ * Uncomment and change as desired.
+ */
+
+$color__black: #111;
+$color__white: #fff;
+$color__light-black: lighten($color__black, 15%);
+$color__base-grey: #888;
+
+
+@function color($map: $colors__theme, $key: 'primary') {
+  @return map-get($map, $key);
+}
+
+@function text-color( $bgcolor ) {
+  @if (lightness( $bgcolor ) > 40) {
+    @return $color__black;
+  }
+  @else {
+    @return $color__white;
+  } 
+}
+
+$colors__grey: (
+    'lightest-grey': mix(white, $color__base-grey, 90%),
+    'light-grey': mix(white, $color__base-grey, 60%),
+    'mid-light-grey': mix(white, $color__base-grey, 30%),
+    'mid-grey': $color__base-grey,
+    'mid-dark-grey': mix(black, $color__base-grey, 30%),
+    'dark-grey': mix(black, $color__base-grey, 60%),
+    'darkest-grey': mix(black, $color__base-grey, 90%),
+);
+
+$color__lightest-grey: color($colors__grey, 'lightest-grey');
+$color__light-grey: color($colors__grey, 'light-grey');
+$color__mid-light-grey: color($colors__grey, 'mid-light-grey');
+$color__mid-grey: color($colors__grey, 'mid-grey');
+$color__mid-dark-grey: color($colors__grey, 'mid-dark-grey');
+$color__dark-grey: color($colors__grey, 'dark-grey');
+$color__darkest-grey: color($colors__grey, 'darkest-grey');
+
+
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+$colors__theme: (
+  'primary': $color__base-grey, 
+  'accent': #f00,
+  'secondary':  #757575,
+  'foreground': $color__white,
+  'background': $color__black
+);
+
+$color__primary: color($colors__theme, 'primary');
+$color__secondary: color($colors__theme, 'secondary');
+$color__tertiary: color($colors__theme, 'accent');
+$color__accent: color($colors__theme, 'accent');
+$color__highlight: color($colors__theme, 'accent');
+$color__background: transparent;
+$color__foreground: color($colors__theme, 'foreground');
+
+$colors__buttons: (
+    'success': #509ea3,
+    'info': $color__secondary,
+    'warning': #f39c12,
+    'danger': $color__accent,
+    'default': $color__accent
+);
+
+$color__success: color($colors__buttons, 'success');
+$color__info: color($colors__buttons, 'info');
+$color__warning: color($colors__buttons, 'warning');
+$color__danger: color($colors__buttons, 'danger');
+$color__default: color($colors__buttons, 'default');
+
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+$colors__social: (
+    'facebook': #3B5998,
+    'twitter': #00aced,
+    'linkedin': #007bb6,
+    'google-plus': #dd4b39,
+    'youtube': #bb0000
+);
+
+$color__link: $color__primary;
+
+$color__facebook: color($colors__social, 'facebook');
+$color__twitter: color($colors__social, 'twitter');
+$color__linkedin: color($colors__social, 'linkedin');
+$color__google-plus: color($colors__social, 'google-plus');
+$color__youtube: color($colors__social, 'youtube');
+
+
+$font__sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font__serif: Georgia, "Times New Roman", Times, serif;
+$font__mono: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__main: $font__sans-serif;
+$font__heading: $font__sans-serif;
+$font__code: $font__mono;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;;
+$font__line-height-headings: 1.2;
+
+// SPACING
+
+$space-triple: 72px; 
+$space-double: 48px;
+$space-32: 30px; 
+$space: 24px; // equal to body line-height
+$space-34: 18px; 
+$space-half: 12px; 
+$space-third: 8px; 
+$space-fourth: 6px; 
+
+$giga: 5; //80
+$mega: 4.5; //72
+$kilo: 4; //64
+
+$h1: 3;// 48 h1 alpha
+$h2: 2.25; // 36 h2 beta
+$h3: 1.75; // 28 h3 gamma
+$h4: 1.375; // 22 h4 delta
+$h5: 1.125; //18 h5 epsilon
+$h6: 1; //16 h6, p zeta
+
+$small: .875; //14 milli
+$smaller: .75; //12 micro
+$tiny: 0.6875; //11 nano
+
+
+// Font sizes
+$font__size_giga: 5em;
+$font__size_mega: 4.5em;
+$font__size_kilo: 4em;
+$font__size-h1: 3em; //48
+$font__size-h2: 2.25em; //36
+$font__size-h3: 1.75em; //28
+$font__size-h4: 1.375em; //22
+$font__size-h5: 1.125em;  //18
+$font__size-h6: 1em; //16
+$font__size-default: 16px;
+$font__size-content: 1em; //16
+$font__size-small: 0.875em; //14
+$font__size-smaller: 0.75em; //12
+$font__size_tiny: 0.6875em; //11
+
+// Weights
+$font__weight-default: 400;
+$font__weight-bold: 700;
+
+
+// Elements
+
+$element__border-radius-base: 0;
+$element__border-radius-small: 4px;
+$element__border-radius-large: 10px;
+$element__border-radius-round: 50%;
+
+$element__widget-radius: $element__border-radius-base;
