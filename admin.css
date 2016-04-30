@@ -1,0 +1,67 @@
+/**
+ * Color variables
+ */
+/**
+ * Uncomment and change as desired.
+ */
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+/**
+ * Lists
+ */
+/**
+ * Buttons
+ */
+/**
+ * Elements
+ */
+/**
+ * Utilities
+ */
+/**
+ * Extends
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body.login {
+  background-color: #111;
+  color: #fff; }
+  body.login div#login #login_error {
+    background-color: rgba(255, 255, 255, 0.2); }
+  body.login div#login h1 a {
+    background-image: none; }
+  body.login div#login form#loginform {
+    background-color: transparent; }
+    body.login div#login form#loginform p {
+      background-color: transparent; }
+    body.login div#login form#loginform input:focus {
+      border-color: #757575; }
+
+.wp-core-ui .button-primary {
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.2;
+  font-weight: 700;
+  padding: .75em 3em;
+  text-align: center;
+  border: 0;
+  background: #f00;
+  color: #fff !important;
+  display: inline-block;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none; }
+  .wp-core-ui .button-primary:link, .wp-core-ui .button-primary:visited {
+    color: #fff !important; }
+  .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
+    background: #ff3333;
+    color: #fff !important; }

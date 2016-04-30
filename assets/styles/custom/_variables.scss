@@ -61,7 +61,7 @@ $color__secondary: color($colors__theme, 'secondary');
 $color__tertiary: color($colors__theme, 'accent');
 $color__accent: color($colors__theme, 'accent');
 $color__highlight: color($colors__theme, 'accent');
-$color__background: transparent;
+$color__background: color($colors__theme, 'background');
 $color__foreground: color($colors__theme, 'foreground');
 
 $colors__buttons: (
