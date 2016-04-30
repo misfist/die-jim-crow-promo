@@ -154,9 +154,15 @@ $font__size_tiny: 0.6875em; //11
 $font__weight-default: 400;
 $font__weight-bold: 700;
 
+// Screen Sizes
+$xs-screen: 0;
+$sm-screen: 544px;
+$md-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1200px;
+
 
 // Elements
-
 $element__border-radius-base: 0;
 $element__border-radius-small: 4px;
 $element__border-radius-large: 10px;

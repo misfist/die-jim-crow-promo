@@ -14,3 +14,9 @@ require get_stylesheet_directory() . '/inc/setup.php';
  * Load enqueue functions.
  */
 require get_stylesheet_directory() . '/inc/enqueue.php';
+
+/**
+ * Load custom theme functions.
+ */
+require get_stylesheet_directory() . '/inc/custom.php';
+

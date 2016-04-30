@@ -9,8 +9,12 @@ body.login {
         }
         h1 {
             a {
-                background-image: none;
+                display: none;
             }
+        }
+
+        h1.login-message {
+            line-height: 125%;
         }
 
         form#loginform {
@@ -43,9 +47,19 @@ body.login {
     }
 }
 
+@include breakpoint(md) {
+
+    h1.login-message {
+        @include font-size($h1);
+        line-height: 125%;
+    }
+
+}
+
 .wp-core-ui .button-primary {
     @include button;
     box-shadow: none;
     text-shadow: none;
 }
+
 
