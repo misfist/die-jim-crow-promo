@@ -51,7 +51,7 @@ add_filter( 'woothemes_our_team_member_twitter', '__return_false' );
 
 add_filter( 'woothemes_our_team_member_user_id', '__return_false' );
 
-add_filter( 'woothemes_our_team_member_user_search', '__return_false' );
+// add_filter( 'woothemes_our_team_member_user_search', '__return_false' );
 
 
 function djc_team_labels( $args ) {
