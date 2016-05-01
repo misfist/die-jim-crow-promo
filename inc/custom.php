@@ -222,5 +222,11 @@ function djc_team_message_text( $translated_text ) {
 
 add_filter( 'gettext', 'djc_team_message_text', 20 );
 
+/**
+ * Enable Shortcodes in Widgets
+ * @link https://codex.wordpress.org/Shortcode#Shortcodes_in_Widgets
+ */
+add_filter('widget_text', 'do_shortcode');
+
 
 ?>
