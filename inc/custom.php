@@ -117,11 +117,18 @@ add_filter( 'woothemes_our_team_member_fields', 'djc_team_add_fields' );
  * 
  */
 function djc_team_labels( $args ) {
-    $labels['name']             = __( 'Bios' );
+    $labels['name']             = __( 'Bios', 'die-jim-crow' );
     $labels['singular_name']    = _x( 'Bio', 'post type singular name' );
     $labels['add_new_item']     = sprintf( __( 'Add New %s' ), __( 'Bio' ) );
     $labels['add_new']          = _x( 'Add New', 'bio' );
-    $labels['menu_name']        = __( 'Bios' );
+    $labels['edit_item']        = sprintf( __( 'Edit %s', 'die-jim-crow' ), __( 'Bio', 'die-jim-crow' ) );
+    $labels['new_item']        = sprintf( __( 'New %s', 'die-jim-crow' ), __( 'Bio', 'die-jim-crow' ) );
+    $labels['all_items']        = sprintf( __( 'All %s', 'die-jim-crow' ), __( 'Bios', 'die-jim-crow' ) );
+    $labels['view_item']        = sprintf( __( 'View %s', 'die-jim-crow' ), __( 'Bio', 'die-jim-crow' ) );
+    $labels['search_items']        = sprintf( __( 'Search %s', 'die-jim-crow' ), __( 'Bios', 'die-jim-crow' ) );
+    $labels['not_found']        = __( 'None Found', 'die-jim-crow' );
+    $labels['not_found_in_trash']        = __( 'None Found in Trash', 'die-jim-crow' );
+    $labels['menu_name']        = __( 'Bios', 'die-jim-crow' );
     $args['labels']             = $labels;
 
     return $args;
@@ -193,7 +200,27 @@ function djc_team_enter_title_here( $title ) {
 
 add_filter( 'enter_title_here', 'djc_team_enter_title_here' );
 
+/**
+ * Change Message Text for Bios
+ * Change the message text for `team-member` posts
+ * @param string $translated_text
+ * @return void
+ * @link https://codex.wordpress.org/Plugin_API/Filter_Reference/gettext
+ */
+function djc_team_message_text( $translated_text ) {
+    if( 'Team Member' == $translated_text ) :
+        $translated_text = 'Bio';
+    elseif( 'Team Members' == $translated_text  ) :
+        $translated_text = 'Bios';
+    elseif( 'Team Member updated' == $translated_text  ) :
+        $translated_text = 'Bio updated';
+    elseif( 'Team Member Details' == $translated_text ) :
+        $translated_text = 'Bio Details';
+    endif;
+    return $translated_text;
+}
 
+add_filter( 'gettext', 'djc_team_message_text', 20 );
 
 
 ?>
