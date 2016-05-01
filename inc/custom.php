@@ -62,6 +62,13 @@ function djc_team_add_fields( $fields ) {
         'default'       => '',
         'section'       => 'info'
     );
+    $fields['prison_id'] = array(
+        'name'          => __( 'Prison #', 'die-jim-crow' ),
+        'type'          => 'text',
+        'description'   => __( 'Enter person\'s prison #' ),
+        'default'       => '',
+        'section'       => 'info'
+    );
     $fields['url'] = array(
         'name'          => __( 'Website URL', 'die-jim-crow' ),
         'description'   => __( 'Enter person\'s website address (e.g. http://www.dieartwork.com/)', 'die-jim-crow' ),
@@ -69,10 +76,10 @@ function djc_team_add_fields( $fields ) {
         'default'       => '',
         'section'       => 'info'
     );
-    $fields['prison_id'] = array(
-        'name'          => __( 'Prison #', 'die-jim-crow' ),
+    $fields['mailing_address'] = array(
+        'name'          => __( 'Mailing Address', 'die-jim-crow' ),
+        'description'   => __( 'Enter person\'s mailing address', 'die-jim-crow' ),
         'type'          => 'text',
-        'description'   => __( 'Enter person\'s prison #' ),
         'default'       => '',
         'section'       => 'info'
     );

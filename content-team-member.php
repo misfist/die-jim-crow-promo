@@ -10,8 +10,8 @@ global $post;
     $role               = esc_attr( get_post_meta( $post->ID, '_byline', true ) );
     $url                = esc_attr( get_post_meta( $post->ID, '_url', true ) );
     $location           = esc_attr( get_post_meta( $post->ID, '_location', true ) );
-
     $prison_id          = esc_attr( get_post_meta( $post->ID, '_prison_id', true ) );
+    $address          = esc_attr( get_post_meta( $post->ID, '_mailing_address', true ) );
     ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -59,7 +59,15 @@ global $post;
             <?php if ( isset( $prison_id ) && '' != $prison_id ) : ?>
 
                 <div class="prison-id" itemprop="userId">
-                     <span><?php _e( 'Prison ID #:', 'die-jim-crow' ); ?></span> <?php echo $prison_id; ?>
+                     <span class="label"><?php _e( 'Prison ID #:', 'die-jim-crow' ); ?></span> <?php echo $prison_id; ?>
+                </div>
+
+            <?php endif; ?>
+
+            <?php if ( isset( $address ) && '' != $address ) : ?>
+
+                <div class="mailing-address" itemprop="address">
+                     <span class="label"><?php _e( 'Write to me at:', 'die-jim-crow' ); ?></span> <?php echo $address; ?>
                 </div>
 
             <?php endif; ?>
