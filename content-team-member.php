@@ -10,6 +10,8 @@ global $post;
     $role               = esc_attr( get_post_meta( $post->ID, '_byline', true ) );
     $url                = esc_attr( get_post_meta( $post->ID, '_url', true ) );
     $location           = esc_attr( get_post_meta( $post->ID, '_location', true ) );
+
+    $prison_id          = esc_attr( get_post_meta( $post->ID, '_prison_id', true ) );
     ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -53,6 +55,14 @@ global $post;
 			    </div>
 
 		    <?php endif; ?>
+
+            <?php if ( isset( $prison_id ) && '' != $prison_id ) : ?>
+
+                <div class="prison-id" itemprop="userId">
+                     <span><?php _e( 'Prison ID #:', 'die-jim-crow' ); ?></span> <?php echo $prison_id; ?>
+                </div>
+
+            <?php endif; ?>
             	
             </div>
 
