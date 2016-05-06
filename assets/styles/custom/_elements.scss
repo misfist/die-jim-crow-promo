@@ -6,6 +6,10 @@ a {
     &.button {
         @include button($font-size: $h4);
     }
+
+    &.button-large {
+        @include button($font-size: $h3);
+    }
 }
 
 button,
@@ -162,6 +166,14 @@ h2.entry-title {
       width: 13.5%;
     }
 
+}
+
+.bottom-panel.hide {
+    display: inherit;
+}
+
+.widgets-trigger {
+    display: none;
 }
 
 

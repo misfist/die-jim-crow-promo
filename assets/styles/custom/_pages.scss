@@ -1,0 +1,25 @@
+.home {
+    .entry-content {
+        text-align: center;
+
+        .main-label {
+            @include screen-reader-text;
+        }
+    }
+
+    .hentry {
+        margin-top: 0;
+    }
+
+    img.size-full {
+        width: 100% !important;
+    }
+
+    .ccf-form-wrapper .field {
+        margin-bottom: .5em;
+    }
+
+    .ccf-submit-button {
+        margin-left: 15px;
+    }
+}

@@ -98,7 +98,7 @@
   }
   &:hover,
   &:focus {
-    background: lighten($bg-color, 10);
+    background: $color__background;
     color: $color !important;
   }
 }

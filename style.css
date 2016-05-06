@@ -1,5 +1,5 @@
 /*
- Theme Name:   Die Jim Crow
+ Theme Name:   Die Jim Crow Promo
  Theme URI:    https://github.com/misfist/die-jim-crow-promo
  Description:  One-page Promo Site for Die Jim Crow.
  Author:       Pea
@@ -43,6 +43,29 @@
   display: table;
   clear: both; }
 
+.home .entry-content {
+  text-align: center; }
+  .home .entry-content .main-label {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    /* many screen reader and browser combinations announce broken words as they would appear visually */
+    word-wrap: normal !important; }
+
+.home .hentry {
+  margin-top: 0; }
+
+.home img.size-full {
+  width: 100% !important; }
+
+.home .ccf-form-wrapper .field {
+  margin-bottom: .5em; }
+
+.home .ccf-submit-button {
+  margin-left: 15px; }
+
 a {
   color: #888; }
   a.button {
@@ -63,7 +86,27 @@ a {
     a.button:link, a.button:visited {
       color: #fff !important; }
     a.button:hover, a.button:focus {
-      background: #ff3333;
+      background: #111;
+      color: #fff !important; }
+  a.button-large {
+    transition: all 0.25s ease;
+    font-size: 28px;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: .75em 3em;
+    text-align: center;
+    border: 0;
+    background: #f00;
+    color: #fff !important;
+    display: inline-block;
+    border-radius: 0; }
+    a.button-large:link, a.button-large:visited {
+      color: #fff !important; }
+    a.button-large:hover, a.button-large:focus {
+      background: #111;
       color: #fff !important; }
 
 button,
@@ -81,7 +124,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Anonymous Pro", "Share Tech Mono", monospace; }
+  font-family: "Courier 10 Pitch", Courier, monospace; }
 
 h2.entry-title {
   width: 100%;
@@ -186,3 +229,9 @@ h2.entry-title {
 
 .widget_woothemes_our_team .columns-6 .team-member {
   width: 13.5%; }
+
+.bottom-panel.hide {
+  display: inherit; }
+
+.widgets-trigger {
+  display: none; }
