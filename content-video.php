@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Die_Jim_Crow
+ * @package Die_Jim_Crow_Promo
  */
 $slug = get_post_field( 'post_name', get_post() );
 // Access global variable directly to adjust the content width for video post format
