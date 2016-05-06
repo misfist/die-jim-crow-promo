@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package Die_Jim_Crow
+ * @package Die_Jim_Crow_Promo
  */
 
 get_header(); ?>

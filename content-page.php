@@ -2,7 +2,7 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package Die_Jim_Crow
+ * @package Die_Jim_Crow_Promo
  */
 $slug = get_post_field( 'post_name', get_post() );
 ?>

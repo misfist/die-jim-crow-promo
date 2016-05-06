@@ -1,12 +1,16 @@
 <?php
 /**
- * @package Die_Jim_Crow
+ * @package Die_Jim_Crow_Promo
  */
 $format = get_post_format();
 $slug = get_post_field( 'post_name', get_post() );
 ?>
 
 <article id="<?php echo $slug; ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<h1 class="page-title"><?php the_title(); ?></h1>
+	</header><!-- .entry-header -->
+
 	<?php if ( '' != get_the_post_thumbnail() && '' == $format ) : ?>
 		<div class="entry-thumbnail">
 			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'die-jim-crow' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="<?php the_ID(); ?>">
@@ -15,12 +19,8 @@ $slug = get_post_field( 'post_name', get_post() );
 		</div><!-- .entry-thumbnail -->
 	<?php endif; ?>
 
-	<header class="entry-header">
-		<?php // Don't show title ?>
-	</header><!-- .entry-header -->
-
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading', 'die-jim-crow' ) ); ?>
+		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
 				'before'   => '<div class="page-links">',

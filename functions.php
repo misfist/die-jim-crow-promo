@@ -2,7 +2,7 @@
 /**
  * Theme functions and definitions
  *
- * @package Die_Jim_Crow
+ * @package Die_Jim_Crow_Promo
  */
 
 /**
